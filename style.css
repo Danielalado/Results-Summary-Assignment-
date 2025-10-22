@@ -22,13 +22,15 @@ body{
 /* Container starts here  */
 .container{
     width: 100%;
-    height: 100vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: "PT Serif", serif;
     font-weight: 600;
     max-width: 650px;
+    background-color: white;
+    border-radius: 1rem;
 }
 /* .containerends here  */
 
@@ -43,6 +45,7 @@ body{
     color: hsl(221, 100%, 96%);
     align-items: center;
     border-radius: 1rem;
+
 }
 
 .result{
@@ -55,10 +58,11 @@ body{
 
 .percent{
      margin: 0.5rem auto 2rem auto;
-     background-color: rgb(24, 4, 112);
-     height: 20rem;
-     width: 8rem;
-     border-radius: 8rem;
+     background: linear-gradient(to bottom, hsl(241, 81%, 54%), hsl(252, 73%, 54%));
+     /* background-color: rgb(24, 4, 112); */
+     height: 140px;
+     width: 140px;
+     border-radius: 50%;
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -95,6 +99,7 @@ body{
     flex-direction: column;
     background-color: white;
     border-radius: 1rem;
+    /* border-radius left: none; */
     padding: 2rem;
 }
 
@@ -200,7 +205,7 @@ body{
 }
 
 .Verbal .image p{
-    color: hsl(234, 85%, 45%)
+    color: hsl(166, 100%, 37%)
 }
 
 .Verbal .value {
@@ -239,7 +244,7 @@ body{
 }
 
 .Visual .image p{
-    color: hsl(166, 100%, 37%)
+    color: hsl(234, 85%, 45%)
 }
 
 .Visual .value {
@@ -263,6 +268,7 @@ button{
     width: 18rem;
     height: 3rem;
     border-radius: 7rem;
+    border: none;
     justify-content: center;
     background-color: hsl(224, 30%, 27%);
     color: white;
@@ -285,12 +291,50 @@ button{
 
 /* Media Queries Starts Here */
 
-@media(max-width: 900px) {
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .body{
+        padding: 1rem 0;
+        height: auto;
+    }
 
     .container {
         flex-direction: column;
-        margin-top: 25rem;
+        width: 95%;
+        /* border-radius: 0px 0px 30px 30px; */
+        /* margin: 5rem;   */
+    }
+
+    .left-col{
+        width: 99%;
+        border-radius: 20px 20px;
+        margin-top: 17rem;
+        /* padding: 40px 30px;
+         border-radius: 15px 15px 30px 30px;
+         */
+    }
+
+    .right-col{
+         width: 99%;
+    }
+
+    .reaction{
+         margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .Memory{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .Verbal{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .Visual{
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 }
-
-
