@@ -306,17 +306,35 @@ button{
         /* margin: 5rem;   */
     }
 
+    .resut{
+        margin-bottom: 0rem;
+    }
+
     .left-col{
-        width: 99%;
+        width: 95%;
+        height: 20rem;
         border-radius: 20px 20px;
-        margin-top: 11.5rem;
+        margin-top: 7rem;
         /* padding: 40px 30px;
          border-radius: 15px 15px 30px 30px;
          */
     }
 
+    .percent{
+        height: 15rem;
+        width: 6rem;
+        margin-bottom: 0rem;
+    }
+
+    .great{
+        margin-top: 0.5rem;
+    }
+    .outcome{
+        margin-bottom: 1rem;
+    }
+
     .right-col{
-         width: 99%;
+         width: 95%;
     }
 
     .reaction{
